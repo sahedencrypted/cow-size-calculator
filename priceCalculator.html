@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <h2 class="title">Cow Weight and Cost Estimator</h2>
+      <form id="form">
+        <div class="input-group ontopp">
+          <label id="one-top" for="girth">Heart Girth (inches)</label>
+          <select id="unit" name="unit">
+            <option value="inches">inches</option>
+            <option value="cm">cm</option>
+            <option value="Foot">Foot</option>
+            
+          </select>
+          <input type="number" id="girth" name="girth">
+        </div>
+        <div class="input-group">
+          <label id="two-top" for="length">Body Length (inches)</label>
+          <input type="number" id="length" name="length">
+        </div>
+        <div class="input-group">
+          <label for="price">Price per kg (420-450tk Ideal)</label>
+          <input type="number" id="price" name="price">
+        </div>
+      </form>
+      <div class="result">
+        <h3>Estimated Cost:</h3>
+        <p id="cost-result"></p>
+      </div>
+      <div class="result">
+        <h3>Estimated Weight:</h3>
+        <p id="weight-result"></p>
+      </div>
+      
+      <div class="result">
+        <h3>Meat:</h3>
+        <div class="sm-cont">
+            <p id="m-result"></p>
+            <p>*</p>
+            <input type="number" id="m-perch" name="price" value="50">
+            <p>%</p>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
