@@ -8,18 +8,34 @@
     font-family: Arial, sans-serif;
     background-color: #f7fafc;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
+  .imgcls{
+    width: 433px;
+  }
+  @media (max-width: 639px) {  /* Targets screens smaller than 640px */
+    body {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .imgcls{
+      width: 90%;
+    }
+    .container{
+      width: 90%!important;
+    }
+  }
+  
   
   .container {
     background-color: #ffffff;
     padding: 27px;
     border-radius: 10px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 92%;
+    width: 400px;
   }
   
   .title {
@@ -99,4 +115,5 @@
   #form{
     margin-bottom: 22px;
   }
+
   

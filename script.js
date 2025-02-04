@@ -108,4 +108,3 @@ console.log(formatNumber('3600', ','));       // "36,00"
 console.log(formatNumber('45700', ','));      // "45,700"
 
 
-
